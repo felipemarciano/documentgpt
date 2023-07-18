@@ -1,0 +1,6 @@
+# requirements.txt
+
+flask==2.0.1
+openai==0.27.0
+langchain==0.0.235
+chromadb==0.3.29

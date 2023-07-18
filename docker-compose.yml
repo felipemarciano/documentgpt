@@ -1,0 +1,19 @@
+version: "3"
+services:
+  api:
+    build: 
+      context: ./api_folder
+    networks:
+      - app_network
+
+  web:
+    build: 
+      context: ./web_folder
+    ports:
+      - "5001:5001"
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
